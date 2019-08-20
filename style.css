@@ -11,7 +11,10 @@
     grid-auto-rows: minmax(20px, auto);
 }
 .montserrat {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
+}
+.roboto {
+    font-family: 'Roboto', sans-serif !important;
 }
 .horizontal-center {
     position: relative;
@@ -26,10 +29,23 @@
     top: 50%;
     transform: translateY(-50%);
 }
+.both-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /* header, nav */
 header {
     grid-column: 1/13;
 }
 .navbar-toggler {
     border-radius: 0;
+    background-color: #7369F9;
+}
+/* showcase */
+.showcase {
+    grid-column: 1/13;
+    height: 95vh;
+    border: 1px solid red;
 }
