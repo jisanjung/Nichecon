@@ -22,6 +22,7 @@
     transform: translateX(-50%);
 }
 .horizontal-center2 {
+    position: relative;
     margin: 0 auto;
 }
 .vertical-center {
@@ -41,6 +42,10 @@ header {
 }
 .navbar-toggler {
     border-radius: 0;
+    background-color: #8980fe;
+    border-color: #8980fe;
+}
+.navbar-toggler:hover {
     background-color: #7369F9;
 }
 /* showcase */
@@ -48,4 +53,16 @@ header {
     grid-column: 1/13;
     height: 95vh;
     border: 1px solid red;
+}
+.innerwrap {
+    width: 70%;
+}
+.innerwrap h1 {
+    font-size: 36px;
+}
+.innerwrap p {
+    font-size: 21px;
+}
+.innerwrap .d-block {
+    width: 15px;
 }
