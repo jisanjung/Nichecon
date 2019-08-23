@@ -39,6 +39,9 @@
 /* header, nav */
 header {
     grid-column: 1/13;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 .navbar-toggler {
     border-radius: 0;
@@ -51,18 +54,30 @@ header {
 /* showcase */
 .showcase {
     grid-column: 1/13;
-    height: 95vh;
-    border: 1px solid red;
+    height: 100vh;
+    background: #6819e8;
+    background: -webkit-linear-gradient(left, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%);
+    background: linear-gradient(to right, #6819e8 0%, #7437d0 35%, #615fde 68%, #6980f2 100%);
 }
 .innerwrap {
-    width: 70%;
+    width: 80%;
 }
 .innerwrap h1 {
     font-size: 36px;
+    color: #fff;
+    font-weight: 100;
 }
 .innerwrap p {
     font-size: 21px;
+    color: #fff;
+    font-weight: 100;
 }
 .innerwrap .d-block {
     width: 15px;
+}
+.innerwrap hr {
+    border-bottom: 1px solid #fff;
+}
+.innerwrap h1 strong {
+    font-weight: bold;
 }
