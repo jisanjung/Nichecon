@@ -39,6 +39,23 @@
 .text-light2 {
     color: #b0b0b0;
 }
+.section-title {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.title-divider {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 60px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* header, nav */
 header {
     grid-column: 1/13;
@@ -136,4 +153,33 @@ header {
     font-weight: lighter;
     margin-top: 18px;
     margin-bottom: 10px;
+}
+/* section separator */
+.section-separator {
+    grid-column: 1/13;
+    height: 60px;
+    background-color: #212121;
+}
+/* services */
+.services {
+    grid-column: 1/13;
+    padding: 50px 0;
+}
+.services-cards {
+    background-color: #212121;
+    padding: 30px;
+    border-left: 2px solid #2f2f2f;
+    margin-bottom: 30px;
+}
+.services-cards span img {
+    width: 40px;
+}
+.services-cards p {
+    font-size: 16px;
+    font-weight: 300;
+}
+.services-cards h3 {
+    font-size: 24px;
+    font-weight: 100;
+    margin: 15px 0;
 }
