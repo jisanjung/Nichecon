@@ -56,6 +56,12 @@
     left: 50%;
     transform: translateX(-50%);
 }
+.section-padding {
+    padding: 50px 0;
+}
+.test {
+    border: 1px solid red;
+}
 /* header, nav */
 header {
     grid-column: 1/13;
@@ -163,7 +169,6 @@ header {
 /* services */
 .services {
     grid-column: 1/13;
-    padding: 50px 0;
 }
 .services-cards {
     background-color: #212121;
@@ -182,4 +187,78 @@ header {
     font-size: 24px;
     font-weight: 100;
     margin: 15px 0;
+}
+/* about */
+.about {
+    grid-column: 1/13;
+}
+.our-trade {
+    grid-column: 1/13;
+}
+.how-we-started {
+    grid-column: 1/13;
+}
+.why {
+    grid-column: 1/13;
+}
+.quote {
+    grid-column: 1/13;
+}
+.section-subhead {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif !important;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.our-trade h3 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+.our-trade p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.how-we-started span {
+    float: left;
+    margin-right: 25px;
+}
+.how-we-started p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+}
+.why p {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 32.2px;
+}
+.why p strong {
+    font-weight: bold;
+}
+.quote p {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+}
+/* contact */
+.contact {
+    grid-column: 1/13;
+}
+.contact p {
+    font-size: 18px;
+    font-weight: 300;
+}
+.contact ul li {
+    list-style: none;
+    font-size: 13px;
+    font-weight: 300;
+}
+.contact ul li strong {
+    font-weight: bold;
 }
