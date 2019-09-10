@@ -71,6 +71,18 @@
 .logo-lg {
     
 }
+.transition {
+    transition: 1s ease all;
+}
+.delay1 {
+    transition-delay: 1s
+}
+.delay2 {
+    transition-delay: 1.5s
+}
+.delay3 {
+    transition-delay: 2s
+}
 /* header, nav */
 header {
     grid-column: 1/13;
@@ -152,13 +164,13 @@ nav ul:nth-last-child(1) {
     width: 160px;
     height: 52px;
     transform: rotateX(180deg);
-    transition: 1s ease all;
 }
 .greeting p {
     grid-column: 1/13;
     font-size: 25px;
     font-weight: 100;
     line-height: 27.5px;
+    transform: translateX(20px);
 }
 /* ideology */
 .ideology {
@@ -182,15 +194,18 @@ nav ul:nth-last-child(1) {
     font-size: 36px;
     margin-top: 20px;
     margin-bottom: 30px;
+    transform: translateX(-40px);
 }
 .ideology span img {
     width: 80px;
+    transform: rotateX(180deg);
 }
 .ideology h2 {
     font-size: 33px;
     font-weight: lighter;
     margin-top: 18px;
     margin-bottom: 10px;
+    transform: translateX(-40px);
 }
 /* section separator */
 .section-separator {
@@ -208,6 +223,8 @@ nav ul:nth-last-child(1) {
     padding: 30px;
     border-left: 2px solid #2f2f2f;
     margin-bottom: 30px;
+    transform: scale(0.5, 0.5);
+    opacity: 0;
 }
 .services-cards span img {
     width: 40px;
@@ -315,6 +332,21 @@ nav ul:nth-last-child(1) {
 .contact form button {
     float: right;
 }
+#subject {
+    grid-column: 1/13;
+}
+#phone {
+    grid-column: 1/13;
+}
+#name {
+    grid-column: 1/13;
+}
+#email {
+    grid-column: 1/13;
+}
+#message {
+    grid-column: 1/13;
+}
 .submit-button {
     background: transparent;
     padding: 12px 26px;
@@ -325,6 +357,7 @@ nav ul:nth-last-child(1) {
     letter-spacing: 2px;
     margin-top: 30px;
     width: 91px;
+    grid-column: 12/13;
 }
 /* footer */
 footer {
@@ -427,9 +460,6 @@ footer p {
     }
     #message {
         grid-column: 1/13;
-    }
-    .submit-button {
-        grid-column: 12/13;
     }
     .small-divider {
         display: none;
