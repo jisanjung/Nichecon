@@ -12,7 +12,7 @@
         <!--main css-->
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <body class="bg bg-dark">
+    <body class="bg bg-dark" data-spy="scroll" data-target=".navbar" data-offset="50">
         <div class="grid-wrap">
             <!--header and nav-->
             <header>
@@ -21,23 +21,23 @@
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarMenu">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item montserrat"><a href="#" class="nav-link">HOME</a></li>
-                            <li class="nav-item montserrat"><a href="#" class="nav-link">IDEOLOGY</a></li>
-                            <li class="nav-item montserrat"><a href="#" class="nav-link">SERVICES</a></li>
-                            <li class="nav-item montserrat"><a href="#" class="nav-link">ABOUT</a></li>
-                            <li class="nav-item montserrat"><a href="#" class="nav-link">CONTACT</a></li>
+                            <li class="nav-item montserrat"><a href="#homeID" class="nav-link active">HOME</a></li>
+                            <li class="nav-item montserrat"><a href="#ideologyID" class="nav-link">IDEOLOGY</a></li>
+                            <li class="nav-item montserrat"><a href="#servicesID" class="nav-link">SERVICES</a></li>
+                            <li class="nav-item montserrat"><a href="#aboutID" class="nav-link">ABOUT</a></li>
+                            <li class="nav-item montserrat"><a href="#contactID" class="nav-link">CONTACT</a></li>
                         </ul>
                     </div>
                 </nav>
             </header>
             <!--showcase-->
-            <section class="showcase">
+            <section class="showcase" id="homeID">
                 <div class="innerwrap both-center mt-3">
                     <h1 class="roboto text-center">A template with a bit of a different <strong>look & feel.</strong></h1>
                     <hr>
                     <div class="p-wrap">
                         <p class="roboto text-center">Particles is a fun and multipurpose template, with clean & modern design + code.</p>
-                        <a href="#" class="horizontal-center d-inline-block mt-3">
+                        <a href="#ideologyID" class="horizontal-center d-inline-block mt-3">
                             <img src="images/icons8-mouse-30.png" alt="Scroll Down">
                             <img src="images/icons8-chevron-down-24.png" alt="Down Arrow" class="d-block horizontal-center">
                         </a>
@@ -52,7 +52,7 @@
                 </div>
             </section>
             <!--ideology-->
-            <section class="ideology grid-wrap">
+            <section class="ideology grid-wrap" id="ideologyID">
                     <div class="ideology-header text-center bg bg-warning text-white montserrat">OUR IDEOLOGY</div>
                     <div class="ideology-cards container bg bg-dark triple-card1">
                         <h3 class="text-center text-white transition slide-right">01</h3>
@@ -76,7 +76,7 @@
             </section>
             <section class="section-separator"></section>
             <!--services-->
-            <section class="services section-padding">
+            <section class="services section-padding" id="servicesID">
                 <h2 class="section-title">Services</h2>
                 <span class="title-divider"></span>
                 <div class="container grid-wrap">
@@ -98,11 +98,11 @@
                 </div>
             </section>
             <!--about-->
-            <section class="about bg bg-secondary section-padding">
+            <section class="about bg bg-secondary section-padding" id="aboutID">
                 <h2 class="section-title">About</h2>
                 <span class="title-divider"></span>
                 <div class="container grid-wrap">
-                    <div class="our-trade mb-3 mr-2 transition">
+                    <div class="our-trade mb-3 mr-2 transition delay1">
                         <h5 class="section-subhead">OUR TRADE</h5>
                         <h3 class="text-white roboto">Designing, Developing, and
                             <br>
@@ -112,28 +112,28 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tristiq enim. Integer eu neque arcu. Aenean sed odio nibh. Cras imperdiet, arcu eget dictum vestibulum elit.
                         </p>
                     </div>
-                    <div class="how-we-started mb-3 ml-2 transition">
+                    <div class="how-we-started mb-3 ml-2 transition delay2">
                         <span class="text-white">Logo</span>
                         <h5 class="section-subhead">HOW WE STARTED IT</h5>
                         <p class="text-light2 roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, imperdiet eget sem at, pellentesque cursus elit. Etiam id ante et elit interdum sollicitudin. Cras imperdiet, arcu eget dictum vestibulum elit.</p>
                         <p class="text-light2 roboto">Curabitur egestas interdum ex, sed commodo ipsum consectetur vitae. Nulla auctor ante erat. Class aptent taciti sociosqu nostra enean sed.</p>
                     </div>
-                    <div class="why mb-3 mr-2 transition">
+                    <div class="why mb-3 mr-2 transition delay3">
                         <h5 class="section-subhead">WHY?</h5>
                         <p class="roboto text-light2">Lorem ipsum dolor sit amet, consectetur adipicing elit. tristique enim. Integer euef neque arcu. Aenean sed odio nibh. <strong class="text-white">Cras imperdiet</strong>, arcu eget dictum vestibulumizor. Lorem ipsil dolor sit amet, consectetur adipiscing elit.s</p>
                     </div>
-                    <div class="quote mb-3 ml-2 transition">
+                    <div class="quote mb-3 ml-2 transition delay4">
                         <h5 class="section-subhead">QUOTE</h5>
                         <p class="roboto text-light2">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus quibusdam."</p>
                     </div>
                 </div>
             </section>
             <!--contact-->
-            <section class="contact bg bg-dark section-padding">
+            <section class="contact bg bg-dark section-padding" id="contactID">
                 <h2 class="section-title">Contact</h2>
                 <span class="title-divider"></span>
                 <div class="container">
-                    <p class="text-light2 roboto text-center w-75 horizontal-center2 mb-md-5">Our team is from all over the world and we know how to deliver quality pixels from miles away.</p>
+                    <p class="text-light2 roboto text-center w-75 horizontal-center2 mb-md-5 transition delay1" id="contactText">Our team is from all over the world and we know how to deliver quality pixels from miles away.</p>
                     <span class="title-divider small-divider"></span>
                     <ul class="roboto">
                         <li class="text-light2 text-decoration"><strong class="text-white mr-2">Email:</strong>info@particle.com</li>
@@ -159,7 +159,7 @@
                         <li class="d-inline"><a href="#"><img src="images/icons8-facebook-f-48.png" alt="Facebook Icon"></a></li>
                         <li class="d-inline"><a href="#"><img src="images/icons8-instagram-52.png" alt="Instagram Icon"></a></li>
                     </ul>
-                    <a href="#" class="horizontal-center d-inline-block bg bg-primary text-white montserrat mt-4 mb-4" id="up-button">UP</a>
+                    <a href="#homeID" class="horizontal-center d-inline-block bg bg-primary text-white montserrat mt-4 mb-4" id="up-button">UP</a>
                     <p class="text-center text-light2 roboto">&copy; Denis Samardijev</p>
                 </div>
             </footer>
@@ -168,6 +168,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
